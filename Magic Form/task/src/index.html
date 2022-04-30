@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <a id="form-link" href="index.html">Form</a>
+    <a id="history-link" href="history.html">History</a>
+</nav>
+<form id="submit-form" onsubmit="formSubmit()">
+    <br>
+    <label class="label" for="first-name"><br>First name<br><input id="first-name" name="first-name" onload="getValue(this)" oninput="updateLocal(this)"></label>
+    <label class="label" for="last-name"><br>Last name<br><input id="last-name" name="last-name" oninput="updateLocal(this)"></label>
+    <label class="label" for="email"><br>Email<br><input id="email" name="email" oninput="updateLocal(this)"></label>
+    <label class="label" for="phone"><br>Phone<br><input id="phone" name="phone" oninput="updateLocal(this)"></label>
+    <label class="label" for="company"><br>Company<br><input id="company" name="company" oninput="updateLocal(this)"></label>
+    <label class="label" for="address"><br>Address<br><input id="address" name="address" oninput="updateLocal(this)"></label>
+    <br>
+    <button id="submit-button"  >Submit form</button>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
